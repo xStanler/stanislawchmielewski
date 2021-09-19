@@ -2,10 +2,6 @@
 {
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
-	-ms-backdrop-filter: blur(8px);
-	-moz-backdrop-filter: blur(8px);
-	-o-backdrop-filter: blur(8px);
 	height: 50vh;
 	position: absolute;
 	top: 30vh;
@@ -115,6 +111,7 @@
 		grid-template-areas: 
 		"text-header text-header"
 		"text-paragraf text-paragraf";
+		overflow: hidden;
 	}
 
 	.main-article-text-header
@@ -137,7 +134,7 @@
 
 	.main-article-text-paragraf p
 	{
-		font-size: 2vh;
+		font-size: 2.18vh;
 	}
 }
 
@@ -146,5 +143,31 @@
 	.socials-container
 	{
 		height: 15vh;
+	}
+}
+
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+	.main-article
+	{
+		background: rgba(0, 0, 0, 0.8);
+	}
+}}
+
+/* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){ 
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+	.main-article
+	{
+		background: rgba(0, 0, 0, 0.8);
+	}
+}}
+
+/* Safari 6.1-10.0 (but not 10.1) */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
+	.main-article
+	{
+		background: rgba(0, 0, 0, 0.8);
 	}
 }

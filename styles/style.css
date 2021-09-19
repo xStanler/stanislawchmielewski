@@ -102,11 +102,7 @@ header
 
 nav > ul
 {
-	list-style: none;
-	-webkit-list-style: none;
-	-ms-list-style: none;
-	-moz-list-style: none;
-	-o-list-style: none;
+	list-style-type: none;
 }
 
 .logo
