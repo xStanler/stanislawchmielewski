@@ -1,0 +1,298 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2vh;
+}
+
+::-webkit-scrollbar
+{
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track 
+{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb 
+{
+	background-color: #818B99;
+    border: 4px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+
+::scrollbar
+{
+    width: 1vw;
+}
+
+::scrollbar-track 
+{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+::scrollbar-thumb 
+{
+	background-color: #818B99;
+    border: 4px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+::moz-scrollbar
+{
+    width: 1vw;
+}
+
+::moz-scrollbar-track 
+{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+::moz-scrollbar-thumb 
+{
+	background-color: #818B99;
+    border: 4px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+
+::safari-scrollbar
+{
+    width: 1vw;
+}
+
+::safari-scrollbar-track 
+{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+::safari-scrollbar-thumb 
+{
+	background-color: #818B99;
+    border: 4px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
+
+body
+{
+	
+	background-color: #000002;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+header
+{
+	width: 100vw;
+	height: 15vh;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo
+{
+	padding: 0 5vw;
+	width: 50vw;
+	font-size: 5vh;
+	text-align: center;
+	font-weight: 700;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	-moz-text-stroke-width: 1px;
+	-moz-text-stroke-color: black;
+	-ms-text-stroke-width: 1px;
+	-ms-text-stroke-color: black;
+	-o-text-stroke-width: 1px;
+	-o-text-stroke-color: black;
+}
+
+.logo:hover
+{
+	cursor: default;
+}
+
+.mobile-nav
+{
+	width: 70vw;
+	position: absolute;
+	top: 0;
+	background-color:#222;
+	z-index: 20;
+	right: -80%;
+	overflow-x: hidden;
+}
+
+.mobile-nav-button
+{	
+	background: #333;
+	width: 70vw;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobile-nav-button:hover
+{
+	cursor: pointer;
+}
+
+.mobile-nav-button i
+{
+	font-size: 5vh;
+}
+
+.navbar-mobile
+{	
+	width: 20vw;
+	height: 10vh;
+	margin-top: 2vh;
+	margin-right: 2vw;
+	display: none;
+}
+
+.navbar-mobile:hover
+{
+	cursor: pointer;
+}
+
+.navbar-mobile i
+{
+	font-size: 5vh;
+}
+
+.navbar
+{
+	width: 55vw;
+	height: 10vh;
+	padding: 0 5vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "home about contact";
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.navbar-list-item
+{
+	height: 6.5vh;
+	font-size: 3vh;
+	padding: 1vh 2vw;
+	-webkit-text-stroke-width: 0.25px;
+	-webkit-text-stroke-color: black;
+	-moz-text-stroke-width: 0.25px;
+	-moz-text-stroke-color: black;
+	-ms-text-stroke-width: 0.25px;
+	-ms-text-stroke-color: black;
+	-o-text-stroke-width: 1px;
+	-o-text-stroke-color: black;
+	background-image: linear-gradient(#d83f37, #d83f37);
+	background-size: 0% 3px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	transition: background-size 300ms ease;
+	text-decoration: none;
+	justify-items: center;
+	align-self: center;
+	text-align: center;
+}
+
+.navbar-list-item:hover
+{
+	background-size: 100% 3px;
+}
+
+#link-home
+{
+	grid-area: home;
+}
+
+#link-about
+{
+	grid-area: about;
+}
+
+#link-contact
+{
+	grid-area: contact;
+}
+
+.main-img {
+	background-image: url('../styles/img/code-in-vs-code-min.jpg');
+    background-repeat: no-repeat;
+    width: 100vw;
+	height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer
+{
+	height: 10vh;
+	text-align: center;
+	display: grid;
+	align-content: center;
+}
+
+/*=======================================mobile=================================*/
+
+.mobile-nav-content
+{
+	width: 70vw;
+	height: calc(100% - 10vh);
+	overflow: hidden;
+}
+
+.mobile-nav-content-items
+{
+	width: 100%;
+	height: 10vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.2vh;
+	background: #444;
+	font-size: 3vh;
+}
+
+@media screen and (max-width: 1175px)
+{
+	.logo
+	{
+		width: 90vw;
+	}
+
+	.navbar
+	{
+		width: 40vw;
+	}
+
+	.navbar-list-item
+	{
+		display: none;
+	}
+
+	.navbar-mobile
+	{
+		display:inline-block;
+	}
+}
+
+@media screen and (max-width: 420px)
+{
+	.logo
+	{
+		font-size: 4vh;
+	}
+}

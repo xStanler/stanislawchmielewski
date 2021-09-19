@@ -1,0 +1,105 @@
+.contact-article
+{
+	width: 42vw;
+	height: 50vh;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(8px);
+	border-radius: 2vh;
+	position: absolute;
+	top: 25vh;
+	left: 29vw;
+}
+
+.contact-article h1 
+{
+	font-size: 5vh;
+	margin: 3vh 2vw;
+
+	-webkit-text-stroke-width: 0.16vh;
+	-webkit-text-stroke-color: black;
+	-moz-text-stroke-width: 0.16vh;
+	-moz-text-stroke-color: black;
+	-ms-text-stroke-width: 0.16vh;
+	-ms-text-stroke-color: black;
+}
+
+.inputs
+{
+	display: flex;
+}
+
+.contact-article-emails input
+{
+	color: black;
+	border-radius: 2vh;
+	padding: 0.5vh 2vw;
+	font-size: 2.2vh;
+	margin: 0 0 2vh 2vw;
+	border: 2px solid black;
+	outline: none;
+	width: 19vw;
+}
+
+.message
+{
+	width: 38vw;
+	height: 20vh;
+	resize: none;
+	color: black;
+	border-radius: 2vh;
+	padding: 0.5vh 1vw;
+	font-size: 2.2vh;
+	margin: 0 2vw 2vh 2vw;
+	border: 2px solid black;
+	outline: none;
+}
+
+.contact-btn
+{
+	color: black;
+	background-color:#d83f37;
+	margin: 0 2vw;
+	padding: 0.5vh 2vw;
+	border-radius: 2vh;
+	border: 2px solid black;
+}
+
+@media screen and (max-width: 1500px) {
+	.contact-article
+	{
+		width: 62vw;
+		height: 50vh;
+		top: 25vh;
+		left: 19vw;
+	}
+	.contact-article-emails input
+	{
+		width: 29vw;
+	}
+
+	.message
+	{
+		width: 58vw;
+		height: 20vh;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.contact-article
+	{
+		width: 82vw;
+		height: 50vh;
+		top: 25vh;
+		left: 9vw;
+	}
+	.contact-article-emails input
+	{
+		width: 39vw;
+	}
+
+	.message
+	{
+		width: 78vw;
+		height: 20vh;
+	}
+}
