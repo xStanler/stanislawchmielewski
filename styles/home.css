@@ -2,6 +2,10 @@
 {
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	-ms-backdrop-filter: blur(8px);
+	-moz-backdrop-filter: blur(8px);
+	-o-backdrop-filter: blur(8px);
 	height: 50vh;
 	position: absolute;
 	top: 30vh;
@@ -43,6 +47,8 @@
 	-moz-text-stroke-color: black;
 	-ms-text-stroke-width: 0.16vh;
 	-ms-text-stroke-color: black;
+	-o-text-stroke-width: 0.16vh;
+	-o-text-stroke-color: black;
 }
 
 .main-article-text-paragraf 
@@ -131,7 +137,7 @@
 
 	.main-article-text-paragraf p
 	{
-		font-size: 2.18vh;
+		font-size: 2vh;
 	}
 }
 

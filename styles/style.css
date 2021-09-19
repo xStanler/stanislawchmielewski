@@ -100,6 +100,15 @@ header
 	justify-content: space-between;
 }
 
+nav > ul
+{
+	list-style: none;
+	-webkit-list-style: none;
+	-ms-list-style: none;
+	-moz-list-style: none;
+	-o-list-style: none;
+}
+
 .logo
 {
 	padding: 0 5vw;
