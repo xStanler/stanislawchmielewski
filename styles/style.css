@@ -100,7 +100,7 @@ header
 	justify-content: space-between;
 }
 
-nav > ul
+nav > ul > li
 {
 	list-style-type: none;
 }
@@ -191,6 +191,7 @@ nav > ul
 
 .navbar-list-item
 {
+	list-style-type: none;
 	height: 6.5vh;
 	font-size: 3vh;
 	padding: 1vh 2vw;
