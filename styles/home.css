@@ -107,7 +107,7 @@
 	.main-article
 	{
 		grid-template-columns: 30vw 70vw;
-		grid-template-rows: 14vh 36vh;
+		grid-template-rows: 14vh 30vh;
 		grid-template-areas: 
 		"text-header text-header"
 		"text-paragraf text-paragraf";
@@ -143,31 +143,5 @@
 	.socials-container
 	{
 		height: 15vh;
-	}
-}
-
-/* Safari 11+ */
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-	.main-article
-	{
-		background: rgba(0, 0, 0, 0.8);
-	}
-}}
-
-/* Safari 10.1 */
-@media not all and (min-resolution:.001dpcm){ 
-@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
-	.main-article
-	{
-		background: rgba(0, 0, 0, 0.8);
-	}
-}}
-
-/* Safari 6.1-10.0 (but not 10.1) */
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
-	.main-article
-	{
-		background: rgba(0, 0, 0, 0.8);
 	}
 }
